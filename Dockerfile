@@ -11,4 +11,4 @@ RUN dpkg -i Nessus-8.12.1-ubuntu1110_amd64.deb
 
 EXPOSE 8834
 
-ENTRYPOINT [ "/etc/init.d/nessusd start" ]
+ENTRYPOINT [ "/opt/nessus/sbin/nessusd -D" ]
